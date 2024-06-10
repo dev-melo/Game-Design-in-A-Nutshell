@@ -33,6 +33,11 @@
     align-items: center;
 }
 
+
+.logo-pag{
+    width:  30%;
+}
+
 .icon{
     height: 1rem;
     width: 1rem;
@@ -89,4 +94,37 @@
     text-transform: uppercase;
 
     color: var(--black);
+}
+
+
+.img-transparent{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .container-header-menu{
+        display: none;
+    }
+    
+    .navbar-header{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        margin-right: 1rem;
+    }
+
+    .img-transparent{
+        display: block;
+    }
+
+    .icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        
+    }
+
+    .logo-pag{
+        width:  50%;
+    }
 }

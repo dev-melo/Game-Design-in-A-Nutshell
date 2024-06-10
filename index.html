@@ -47,10 +47,21 @@
                 </li>
             </ul>
 
-            <img src="assets/Logo.svg" alt="Logo da GameDesign" class="container-img">
+            <img src="assets/LogoDesign.svg" alt="Logo da GameDesign" class="container-img logo-pag">
         </div>
-        <div class="container-header">
+
+        
+        <div class="container-header navbar-header">
             <a href="#" class="container-header-link button-anchor">Assinar</a>
+            <a href="#" class="menu-list-link">
+                <img src="assets/Favoritos.svg" alt="Favoritos" class="container-img icon img-transparent">
+            </a>
+            <a href="sobre.html" class="menu-list-link">
+                <img src="assets/interrogatorio.svg" alt="Carrinho" class="container-img icon img-transparent">
+            </a>
+            <a href="#" class="menu-list-link">
+                <img src="assets/User.svg" alt="Usuário" class="container-img icon img-transparent">
+            </a>
         </div>
     </header>
 
@@ -60,49 +71,56 @@
         <input type="search" class="banner-search" placeholder="Qual será a sua próxima leitura?">
     </section>
     <section class="carrousel">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/magazine/page_1.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/magazine/page_2.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/magazine/page_3.png" alt=""></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
-        </div>
-        <div class="container-card">
-            <!-- 1º Linha -->
-            <div class="card-description">
-                <!-- 1º Coluna -->
-                <div class="description">
-                    <h3 class="description-title">Ultimo lançamento</h3>
-                    <h2 class="description-title-magazine">Game Design In A Nutshell</h2>
-                    <p class="description-text">A revista foi feita para quem quisesse entrar no mundo de design de
-                        games, mostrando dicas, exemplos e conceitos de games, fazendo com que facilite a vida deles.
-                    </p>
+        <h2 class="carrousel-title">Destaques</h2>
+        <div class="container-carrousel">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/magazine/page_1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/magazine/page_2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/magazine/page_3.png" alt=""></div>
                 </div>
-                <!-- 2º Coluna -->
-                <img src="assets/CapaRevista.png" alt="Capa da Revista" class="description-img">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
 
-            <!-- 2º Linha -->
-            <div class="card-buttons">
-                <!-- 1º Coluna -->
-                <ul class="buttons">
-                    <li class="buttons-item"><img src="assets/Favoritos.svg" alt="Favoritar revista"></li>
-                </ul>
 
-                <!-- 2º Coluna -->
-                <a href="#" class="button-anchor">Saiba Mais</a>
+            <h2 class="carrousel-title">Último lançamento</h2>
+            <div class="container-card">
+                <!-- 1º Linha -->
+                <div class="card-description">
+                    <!-- 1º Coluna -->
+                    <div class="description">
+                        <h3 class="description-title">Game Design In A Nutshell</h3>
+                        <h2 class="description-title-magazine"></h2>
+                        <p class="description-text">A revista foi feita para quem quisesse entrar no mundo de design de
+                            games, mostrando dicas, exemplos e conceitos de games, fazendo com que facilite a vida
+                            deles.
+                        </p>
+                    </div>
+                    <!-- 2º Coluna -->
+                    <img src="assets/CapaRevista.png" alt="Capa da Revista" class="description-img">
+                </div>
+
+                <!-- 2º Linha -->
+                <div class="card-buttons">
+                    <!-- 1º Coluna -->
+                    <ul class="buttons">
+                        <li class="buttons-item"><img src="assets/Favoritos.svg" alt="Favoritar revista"></li>
+                    </ul>
+
+                    <!-- 2º Coluna -->
+                    <a href="#" class="button-anchor">Saiba Mais</a>
+                </div>
             </div>
         </div>
     </section>
@@ -119,13 +137,19 @@
     <script src="scripts/swiper.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-                    spaceBetween: 10,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            breakpoints: {
+                1024: { // telas de 1024px de largura e acima
                     slidesPerView: 3,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    },
-                    });
+                    spaceBetween: 30,
+                },
+            },
+        });
     </script>
 </body>
 
