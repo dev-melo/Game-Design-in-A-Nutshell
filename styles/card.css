@@ -10,23 +10,28 @@
 .card-description{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5em;
+    margin: 0 1rem 1rem 0;
 }
 
 .description-title{
-    color: orange;
+    color: var(--pink-red);
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.description-title-book{
-    color: blue;
+.description-title-magazine{
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: capitalize, uppercase;
     margin: 0.5em 0;
 }
 
 .description-text{
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.description-img{
+    width: 50%;
 }
 
 .card-buttons{
@@ -46,7 +51,7 @@
 }
 
 .button-anchor{
-    background-color: orange;
+    background-color: var(--pink-red);
     text-decoration: none;
     color: var(--white);
     font-weight: 700;

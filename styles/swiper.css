@@ -1,7 +1,10 @@
-.swiper {
-   
-
+.carrousel{
     width: 90%;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
   }
 
 .swiper-pagination{
@@ -15,4 +18,11 @@
 
 .swiper-button-prev, .swiper-button-next{
     display: none;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
