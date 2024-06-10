@@ -1,0 +1,92 @@
+/*Configurando o menu hamburguer*/
+
+.container-header-menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-header-button{
+    display: none;
+}
+
+/*Configurando o Header*/
+
+.main-header-container{
+    background-color: var(--bkg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+}
+
+.container-img{
+    padding: 1em;
+    align-items: center;
+}
+
+.icon{
+    height: 1rem;
+    width: 1rem;
+}
+
+/*Navbar*/
+.button-anchor{
+    background-color: var(--font-color-primary);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+
+    padding: 1em 2.2em;
+
+    border-radius: 2rem;
+
+    margin-right: 1rem;
+}
+
+/*Ao clicar no botão mostra o menu */
+
+.container-header-button:checked~.menu-list{
+    display: block;
+}
+
+.menu-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60%;
+}
+
+.menu-list-title, 
+.menu-list-item{
+    padding: 0.5em;
+    background-color: white;
+}
+
+.menu-list-title{
+    color: var(--font-color-orange);
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+.menu-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list-link {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: var(--black);
+}

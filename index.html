@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Design In A Nutshell</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <header class="main-header-container">
+        <div class="container-header">
+            <input type="checkbox" id="menu" class="container-header-button">
+            <label for="menu" class="container-menu">
+                <span class="container-header-menu container-img"></span>
+            </label>
+            <ul class="menu-list">
+                <li class="menu-list-title">Menu</li>
+                <!-- <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                        <img src="assets/Search.svg" alt="Buscar" class="container-img icon">
+                        <p class="text-transparent">Buscar</p>
+                    </a>
+                </li> -->
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                        <img src="assets/Favoritos.svg" alt="Favoritos" class="container-img icon">
+                        <p class="text-transparent">Favoritos</p>
+                    </a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                        <img src="assets/Compras.svg" alt="Carrinho" class="container-img icon">
+                        <p class="text-transparent">Carrinho</p>
+                    </a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                        <img src="assets/User.svg" alt="Usuário" class="container-img icon">
+                        <p class="text-transparent">Usuário</p>
+                    </a>
+                </li>
+            </ul>
+
+            <img src="assets/Logo.svg" alt="Logo da GameDesign" class="container-img">
+        </div>
+        <div class="container-header">
+            <a href="#" class="container-header-link button-anchor">Assinar</a>
+        </div>
+    </header>
+
+    <section class="container-banner">
+        <h2 class="banner-title">Já sabe por onde começar?</h2>
+        <p class="banner-text">Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
+        <input type="search" class="banner-search" placeholder="Qual será a sua próxima leitura?">
+    </section>
+    <section class="carrousel">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/carrousel/software tester-pana.svg" alt=""></div>
+                <!-- <div class="swiper-slide"><img src="assets/carrousel/software tester-amico.svg" alt=""></div> -->
+                <div class="swiper-slide"><img src="assets/carrousel/software tester-rafiki.svg" alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="container-card">
+            <!-- 1º Linha -->
+            <div class="card-description">
+                <!-- 1º Coluna -->
+                <div class="description">
+                    <h3 class="description-title">último lançamento</h3>
+                    <h2 class="description-title-magazine">Titulo da revista</h2>
+                    <p class="description-text">Breve descrição</p>
+                </div> 
+                <!-- 2º Coluna -->
+                <img src="assets/Angular.svg" alt="Logo Angular" class="description-img">  
+            </div>
+
+            <!-- 2º Linha -->
+            <div class="card-buttons">
+                <!-- 1º Coluna -->
+                <ul class="buttons">
+                    <li class="buttons-item"><img src="assets/Favoritos.svg" alt="Favoritar revista"></li>
+                    <li class="buttons-item"><img src="assets/Compras.svg" alt="Adicionar ao carrinho"></li>
+                </ul>
+
+                <!-- 2º Coluna -->
+                <a href="#" class="button-anchor">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-desc">
+            <h2 class="contact-title">Fique por dentro das novidades!</h2>
+            <p class="contact-text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contact-email">
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper.js"></script>
 </body>
+
 </html>

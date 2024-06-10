@@ -1,0 +1,55 @@
+.container-card{
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    margin: 1em;
+    padding: 1em;
+}
+
+.card-description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.description-title{
+    color: orange;
+    font-weight: 700;
+}
+
+.description-title-book{
+    color: blue;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+.description-text{
+    font-size: 14px;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+
+    align-items: center;
+}
+
+.buttons-items{
+    margin: 0 0.5em;
+}
+
+.button-anchor{
+    background-color: orange;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+
+    padding: 1em 2.2em;
+}
